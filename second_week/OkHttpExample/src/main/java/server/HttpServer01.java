@@ -17,7 +17,7 @@ public class HttpServer01 {
     private static void service(Socket socket) {
         try {
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream());
-            printWriter.println("HTTP/1.1 200 0k");
+            printWriter.println("HTTP/1.1 200 Ok");
             printWriter.println("Content-type:text/html;charset=utf-8");
             String body = "hello,nio1";
             printWriter.println("Content-length:" + body.getBytes().length);
