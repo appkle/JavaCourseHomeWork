@@ -1,6 +1,6 @@
 import java.util.concurrent.*;
 
-public class Homework02_03 {
+public class Homework02_3 {
     public static void main(String[] args) {
         long start=System.currentTimeMillis();
         FutureTask<Integer> futureTask = new FutureTask<>(new Callable<Integer>() {
