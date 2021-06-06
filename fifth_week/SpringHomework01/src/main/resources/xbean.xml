@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xbean.apache.org/schemas/spring/1.0"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:stu="java://method3"
+       xsi:schemaLocation="http://xbean.apache.org/schemas/spring/1.0 classpath:/org/apache/xbean/spring/spring-beans.xsd">
+
+    <stu:Student id="student1" studentId = "123" name="xiaoming" />
+
+</beans>
