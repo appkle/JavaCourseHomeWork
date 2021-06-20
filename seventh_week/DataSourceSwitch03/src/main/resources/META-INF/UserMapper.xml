@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.exercise.datasourceswitch03.repository.UserRepository">
+    <insert id="insertUser"  parameterType="com.exercise.datasourceswitch03.pojo.User">
+		insert into tb_user(username, protrait, sex, usertype) values(#{userName},#{protrait},#{sex}, #{userType})
+	</insert>
+
+    <select id="getUserByName"  parameterType="String" resultType="com.exercise.datasourceswitch03.pojo.User">
+		select * from tb_user where username = #{userName}
+	</select>
+</mapper>
