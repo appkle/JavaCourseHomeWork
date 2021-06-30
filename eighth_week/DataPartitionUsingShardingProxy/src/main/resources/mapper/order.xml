@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.data_partition_using_sharding_proxy.mapper.OrderMapper">
+    <insert id="insert"  parameterType="Order">
+		insert into t_order(userid, createtime, state, receivername, region, address, phone) values(#{userId},#{createTime},#{state},#{receiverName},#{region},#{address},#{phone})
+	</insert>
+
+	<select id = "getOrderById" parameterType= "long" resultType="Order">
+		select * from t_order where id = #{id};
+	</select>
+
+	<select id = "getOrderByUserId" parameterType="int" resultType="order">
+	    select * from t_order where userid = #{userId};
+	</select>
+
+	<delete id="deleteOrder" parameterType="long">
+	    delete from t_order where id = #{id};
+	</delete>
+
+	<update id="updateOrderById" parameterType="Order">
+         update t_order set createtime= #{createTime},
+                state= #{state}, receivername= #{receiverName}, region=#{region}, address=#{address},
+                phone=#{phone} where id = #{id};
+	</update>
+
+</mapper>
