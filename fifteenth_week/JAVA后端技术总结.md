@@ -2,7 +2,7 @@
 
  JVM中的Java解释器负责将编译好的字节码文件解释成特定的机器码实现了程序的运行。正是由于JVM的存在实现了程序的跨平台性。JVM主要包括三大块的知识：与JVM内存模型相关的知识，与类加载相关的知识以及JVM内部的垃圾回收器。JVM是JAVA的基石，需要JAVA程序员对它有充分的了解，因为系统的性能调优是离不开它的，可能很多系统的性能问题都出在JVM上。
 
-![img](file:///C:/Users/HJZ/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![](D:\JavaCourseHomework\fifteenth_week\JVM.png)
 
 # 二  NIO
 
